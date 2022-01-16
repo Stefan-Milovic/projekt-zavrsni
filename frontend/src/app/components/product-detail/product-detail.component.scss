@@ -1,0 +1,27 @@
+
+ button{
+    color: #fff;
+    &:hover{
+    font-size: 20px;
+ cursor: pointer;
+ }
+ }
+ i{
+    font-size: 28px;
+     &:hover{
+        cursor: pointer;
+        color: #e60b0b  ;
+     }
+ }
+ h3{
+    color:#e60b0b;
+    font-weight: 600;
+ }
+ .oldPrice{
+    text-decoration: line-through;
+ }
+ p{
+    font-size: 13px;
+ }
+
+

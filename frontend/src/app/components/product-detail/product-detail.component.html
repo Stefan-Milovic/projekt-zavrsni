@@ -1,0 +1,15 @@
+<div class="productContainer d-flex justify-content-center">
+    <div class="images m-5">
+        <img [src]="productDetail.defaultImage" style="width:70% " alt="skije">
+    </div>
+    <div class="aboutProduct m-5 w-50">
+        <h2>{{productDetail.name}}</h2>
+        <h6>FDSKFSK342</h6>
+        <p>{{productDetail.description}}</p>
+        <h6 class="oldPrice" *ngIf="productDetail.discount">{{productDetail.price | currency}}</h6>
+        <h3 *ngIf="productDetail.discount !==0">{{productDetail.price-productDetail.discount |
+            currency}}</h3>
+        <p>PDV ukljucen u cijenu</p>
+        <button (click)="addToCart(productDetail.id)" class="btn btn-success w-50">Add to card</button>
+    </div>
+</div>

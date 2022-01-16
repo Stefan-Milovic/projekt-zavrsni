@@ -1,0 +1,62 @@
+
+.homeWrapper{
+    width: 100%;
+    margin: auto;
+    margin-bottom:30px;
+ h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+    
+    .snizenje{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .uvod{
+        width: 65%;
+    }
+    .skijas{
+        width: 30%;
+        height: 50%;
+        margin: 20px;
+    }
+    .saleHeader{
+        text-align: center;
+        color: #ccc;
+    }
+    .skijanje{
+        font-style: italic;
+    }
+    .lastContent .img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .skijas{
+        font-weight: 600;
+    }
+}
+.productsImages{
+    justify-content: center;
+}
+.contentHelper{
+    flex-wrap: wrap-reverse;
+}
+
+.lastContent{
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lastContent p{
+    width: 60%;
+    text-align: left;
+}
+
+.lastContent .img{
+    width: 30%;
+    height: 200px;
+}

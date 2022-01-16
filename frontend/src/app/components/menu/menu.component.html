@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/home"><img id="logoBrand"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNi4yXnHMYTNDO2i-9PfbVFsuQDGm5wsaLQ&usqp=CAU"
+            alt="logo-photo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+            </li>
+            <a class="navbar-brand" routerLink="/home">SkiCloud <i class="bi bi-cloud"></i></a>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/card" routerLinkActive="active"><i class="bi bi-cart3"></i></a>
+            </li>
+
+            <li *ngIf="userService?.loggedUser.id"><a routerLink="/profile" class="nav-link"
+                    routerLinkActive="active">{{userService?.loggedUser?.firstName}} <i class="bi bi-person-square">
+                    </i></a></li>
+            <li (click)="logout()" *ngIf="userService?.loggedUser.id"><a class="nav-link"><i
+                        class="bi bi-box-arrow-in-right"></i></a>
+            </li>
+            <li *ngIf="!userService?.loggedUser.id"><a class="nav-link" routerLink="/login"
+                    routerLinkActive="active">Log IN or Sign
+                    UP</a></li>
+            <li *ngIf="userService?.loggedUser.role && userService?.loggedUser.role === 'ADMIN'"><a class="nav-link"
+                    routerLink="/admin" routerLinkActive="active"><i class="bi bi-shield-lock"></i></a></li>
+        </ul>
+    </div>
+</nav>
+<!-- <div class="navigation">
+
+    <div class="leftMenu">
+        <a routerLink="/home"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNi4yXnHMYTNDO2i-9PfbVFsuQDGm5wsaLQ&usqp=CAU"
+                alt="logo-photo">
+        </a>
+        <ul class="menu">
+            <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+        </ul>
+    </div>
+    <h1 class="mainHeader pb-2">SkiCloud <i class="bi bi-cloud"></i></h1>
+    <div class="rightMenu">
+        <ul class="menu">
+
+            <li><a routerLink="/card" routerLinkActive="active"><i class="bi bi-cart3"></i></a></li>
+            <li><a routerLink="/favorites" routerLinkActive="active"><i class="bi bi-heart"></i></a></li>
+            <li *ngIf="userService?.loggedUser.id"><a routerLink="/profile"
+                    routerLinkActive="active">{{userService?.loggedUser?.firstName}} <i class="bi bi-person-square">
+                    </i></a></li>
+            <li (click)="logout()" *ngIf="userService?.loggedUser.id"><a><i class="bi bi-box-arrow-in-right"></i></a>
+            </li>
+            <li *ngIf="!userService?.loggedUser.id"><a routerLink="/login" routerLinkActive="active">Log IN or Sign
+                    UP</a></li>
+            <li *ngIf="userService?.loggedUser.role && userService?.loggedUser.role === 'ADMIN'"><a routerLink="/admin"
+                    routerLinkActive="active"><i class="bi bi-shield-lock"></i></a></li>
+        </ul>
+    </div>
+
+
+</div> -->

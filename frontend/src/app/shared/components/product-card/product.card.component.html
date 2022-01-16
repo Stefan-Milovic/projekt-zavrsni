@@ -1,0 +1,9 @@
+<div (click)="showAllAboutProduct(product.id)" class="card d-flex flex-column align-items-center p-3">
+
+    <img [src]="product.defaultImage" alt="skije">
+    <p class="quantity">x{{product.quantity}}</p>
+    <h5>{{product.name}}</h5>
+    <p id="kodPara">FSDKJ5889K</p>
+    <p *ngIf="product.discount !== 0" class="oldPrice mb-0">{{product.price | currency}}</p>
+    <p class="newPrice">{{product.price -product.discount | currency}}</p>
+</div>

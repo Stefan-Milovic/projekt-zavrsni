@@ -1,0 +1,32 @@
+/*h3{
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    width: 40%;
+}*/
+.d-flex{
+    font-size: 20px;
+    margin-bottom:30px;
+    img{
+        height: 170px;
+        margin: 20px;
+    }
+
+}
+.testCard:hover  .card{
+    border:1px solid #fff !important;
+    cursor: unset;
+    .oldPrice, .newPrice{
+        display: block;
+    }
+}
+.btn{
+    display: flex;
+    button{
+        margin: auto;
+        font-size: 25px;
+        box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+        -webkit-box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+        -moz-box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+    }
+}
+

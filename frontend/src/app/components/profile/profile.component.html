@@ -1,0 +1,21 @@
+<div class="wrapper d-flex">
+
+    <div class="card align-items-center">
+        <img src="https://www.pngitem.com/pimgs/m/111-1114839_circle-people-icon-flat-png-avatar-icon-transparent.png"
+            alt="avatar">
+        <p>YOUR PROFILE</p>
+        <h1>{{currentUser.firstName | titlecase }} {{currentUser.lastName | titlecase }}</h1>
+        <p>{{currentUser.email}}</p>
+        <!-- <p class="frontend">Programer je zanimanje koje uključuje zadavanje niza instrukcija u formaliziranom
+            programskom jeziku koji se koristi na računarima koji u ovisnosti o sadržaju instrukcije obavlja neku
+            radnju.Algoritam se grafički predstavlja pomoću DIJAGRAMA TOKA.Pseudokod je algoritam zapisan riječima</p> -->
+
+        <p><i class="bi bi-calendar-day"></i>{{currentUser.address}}</p>
+
+        <div class="com">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-twitter"></i>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.wrapper{
+background-color: #ccc;
+    .card{
+        border: 1px solid black;
+        margin: 10px auto;
+        padding: 15px;
+        width: 40%;
+        height: 100%;
+        
+    }
+    img{
+        border-radius: 50%;
+    }
+    .frontend{
+        width:60%;
+        font-size: 12px;
+    }
+.upper{
+    background-color: rgb(0, 255, 213);
+    height: 300px;
+}
+.lower{
+    height: 300px;
+}
+img{
+    height: 50px;
+}
+.com i{
+    font-size: 25px;
+    margin: 5px;
+    &:hover{
+    cursor: pointer;
+    color: #153da0;
+    }
+}
+}

@@ -1,0 +1,68 @@
+<div class="adminPanelDash container pt-5 p-5">
+    <div class="row">
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.username" placeholder="Username" type="text" class="form-control">
+        </div>
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.email" placeholder="Emails" type="email" class="form-control">
+        </div>
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.firstName" placeholder="First name" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.lastName" placeholder="Last name" type="text" class="form-control">
+        </div>
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.role" placeholder="Role" type="text" class="form-control">
+        </div>
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.status" placeholder="Status" type="text" class="form-control">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="mb-3 col-md-4">
+            <input [(ngModel)]="changedUser.address" placeholder="Address" type="text" class="form-control">
+        </div>
+    </div>
+    <button *ngIf="changedUser.id" (click)="updateUser()" class="btn btn-primary">Update</button>
+
+    <table class="table table-hover table-dark mt-3">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">First name</th>
+                <th scope="col">Last name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Address</th>
+                <th scope="col">Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users"
+                [ngClass]="{'hide-this': user.status === 'DELETED', 'user-banned': user.status === 'BAN'}">
+                <th scope="row">{{user.id}}</th>
+                <td>{{user.username}}</td>
+                <td>{{user.email }}</td>
+                <td>{{user.firstName }}</td>
+                <td>{{user.lastName }}</td>
+                <td>{{user.role }}</td>
+                <td>{{user.address }}</td>
+                <td>
+                    <button (click)="editUser(user)" class="btn btn-outline-success m-2">EDIT<i
+                            class="bi bi-pencil-fill"></i></button>
+                    <button (click)="deleteUser(user.id)" class="btn btn-outline-danger m-2">DELETE<i
+                            class="bi bi-trash2-fill"></i></button>
+                    <button (click)="banUser(user.id)" class="btn btn-outline-danger">BAN<i
+                            class="bi bi-trash2-fill"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,72 @@
+.wrapper{
+    padding-top: 0px;
+}
+.wrapperProducts{
+    padding-top: 0%;
+    height: auto;
+    
+}
+li{
+    list-style: none;
+    margin: 15px;
+    padding: 15px;
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 20px;
+        color: #153da0;
+    }
+    &.active{
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 20px;
+        color: #153da0;
+    }
+}
+.oSkiCloud{
+    padding: 10px;
+}
+.oSkiCloud p {
+    font-size: 15px;
+}
+h5{
+    color: #153da0;
+}
+span{
+    color: #e60b0b;
+    font-weight: 600;
+}
+.categoryProducts{
+    width: 30%;
+    background-color: rgb(233, 233, 233);
+}
+
+.productsActions {
+    width: 70%;
+    margin-top: 15px;
+}
+
+.productsActions .filterProducts{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.productsActions .displayProducts{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .categoryProducts{
+        width: 40%;
+    } 
+    .productsActions {
+        width: 55%;
+    }
+    
+   
+}

@@ -1,0 +1,66 @@
+nav #logoBrand{
+    width: 100px;
+}
+nav ul{
+    width: 85%;
+    justify-content: space-evenly;
+}
+nav #navbarNav{
+    justify-content: flex-end;
+}
+// .menu{
+//     display: flex;
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     align-items: center;
+//     font-size: 18px;
+//     font-family: italic;    
+
+
+//     li{
+
+//         a{
+//             display: block;
+//             text-decoration: none;
+//             padding: 15px 20px;
+//             color: #ad9e9e;
+        
+//             &:hover {
+//                 cursor: pointer;
+//                 background-color: #153da0 ;
+//                 color: #fff;
+//             }
+//             &.active{
+//                 cursor: pointer;
+//                 background-color: #153da0 ;
+//                 color: #fff; 
+//             }
+//         }
+//     }
+// }
+// .navigation{
+//     display: flex;
+//     flex-direction:row;
+//     justify-content: space-between;
+//     position: fixed;
+//     z-index: 2;
+//     width: 100%;
+//     background-color: #fff;
+//     border-bottom: 1px solid #ccc;
+//     a img{
+//         max-height: 65px;
+//         max-width:195px;
+//         padding:2px 5px 0 0 ;
+//     }
+//     .leftMenu{
+//         display: flex;
+//         flex-direction: row;
+//     }
+// }
+// .mainHeader{
+//     text-align: center;
+//     color:#153da0;
+//     font-weight: 700;
+//     text-decoration: underline;
+// }

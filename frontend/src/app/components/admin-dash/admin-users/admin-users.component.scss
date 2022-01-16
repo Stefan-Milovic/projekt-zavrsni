@@ -1,0 +1,46 @@
+// .usersDashDiv{
+//     padding:18px;
+//     border: 1px solid #153da0 ;
+//     border-radius: 10px;
+//     width: 20%;
+//     i{
+//         font-size:40px;
+//         color: #fff;
+//     }
+//     .detailsDiv{
+//         padding-left: 30px;
+//         color: #fff;
+//         p{
+//             font-size: 30px;
+//         }
+//         h6{
+//             font-size: 20px;
+//         }
+//     }
+//     &:hover{
+//         opacity: .8;
+//         cursor: pointer;
+//     }
+// }
+// .bgColor1{
+//     background-color:#66ff66 ;
+// }
+// .bgColor2{
+//     background-color:  #ff9933;
+// }
+// .bgColor3{
+//     background-color: #b3b3ff;
+// }
+// .active{
+//     border:4px solid rgba(0,0,0);
+//     opacity: .5;
+// }
+
+
+.hide-this{
+    display: none;
+}
+
+.user-banned{
+   color: red !important;
+}

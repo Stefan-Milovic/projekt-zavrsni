@@ -1,0 +1,55 @@
+img{
+    width: 25%;
+    height: 25%;
+    margin-bottom: 35px;
+}
+.usersDashDiv{
+    box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+    -webkit-box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+    -moz-box-shadow: 59px -5px 400px 49px rgba(5,5,5,1);
+    padding:18px;
+    border: 1px solid rgb(0,0,0) ;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+    text-align: center;
+    
+    i{
+        font-size:40px;
+        color:rgb(0,0,0);
+    }
+    .detailsDiv{
+        padding-left: 30px;
+        color: rgb(0,0,0);
+        p{
+            font-size: 30px;
+        }
+        h6{
+            font-size: 20px;
+        }
+    }
+    &:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+}
+.div1{
+    color: rgb(0,0,0);
+}
+.div2{
+   color:  rgb(0,0,0);
+}
+.div3{
+    color: rgb(0,0,0);
+}
+.active{
+    border:4px solid rgba(0,0,0);
+    opacity: .5;
+
+}
+
+.adminPanel{
+    width: 100%;
+}

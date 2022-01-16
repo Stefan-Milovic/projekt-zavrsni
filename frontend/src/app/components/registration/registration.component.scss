@@ -1,0 +1,39 @@
+.registrationWrapper{
+
+    background-image: url('https://wallpaperaccess.com/full/5321088.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+    padding-top: 50px;
+.registrationForm{
+    width: 45%;
+    padding:30px;
+    margin: auto;
+    color: #fff;
+}
+
+.btn-outline-primary{
+    margin-right: 5px;
+    }
+    button{
+        background-color: #fff;
+        &:hover{
+            color: rgb(255, 143, 218);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .registrationWrapper{
+
+        background-image: unset;
+        background-color: #343434;
+        width: 100%;
+        height: auto;
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+
+    
+}

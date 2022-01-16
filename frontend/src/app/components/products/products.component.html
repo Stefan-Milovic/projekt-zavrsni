@@ -1,0 +1,43 @@
+<div class="wrapperProducts d-flex w-100">
+    <div class="categoryProducts d-flex flex-column">
+        <ul>
+            <li [ngClass]="{active: activeCategory === category.id}" (click)="filterByCategory(category)"
+                *ngFor="let category of categories"> <i class="bi bi-snow"></i> {{category.name}}</li>
+        </ul>
+        <hr>
+        <h5 class="d-flex justify-content-center">SkiCloud</h5>
+        <hr>
+        <div class="oSkiCloud">
+            <p><span>SkiCloud</span>, je kompanija sa mrezom maloprodajnih objekata koji se nalaze na najatraktivnijim –
+                centralnim
+                lokacijama (trznim centrima i shopping zonama) svih vecih gradova u regionu.
+
+                <span>SkiCloud</span> je zvanicni distributer velikih svjetskih brendova iz fashion, casual, street
+                garderobe, ali,
+                takodje, i vrhunske sportske opreme iz oblasti skijanja, tenisa, outdoor, biciklizma, kao i action -
+                extreme sportova.
+
+                Nas prodajni asortiman nudi vam mogucnost da budete upoznati sa najnovijim svjetskim trendovima putem
+                brendova kao sto su: Pepe Jeans, Superdry, ONeil, Quiksilver, DC, EMU. Takođe, omogucili smo vam i
+                pristup u najsavremenije tehnologije u sportskoj opremi putem brendova koji su sinonim za invenciju i
+                vrhunske performanse: Wilson, Salomon, Atomic, Burton, Spyder, Carerra, North Face, Suunto...
+            </p>
+        </div>
+    </div>
+    <div class="productsActions d-flex flex-wrap">
+        <!--
+            <div class="filterProducts">
+            ovo samo radi testa 
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+-->
+        <div class="displayProducts ">
+            <app-product-card *ngFor="let product of products10" [product]="product"></app-product-card>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Vucko.png" alt="slika">
+</div>
+<div class="d-flex flex-wrap container">
+
+    <app-product-card class="testCard" *ngFor="let product of productsCard" [product]="product">
+    </app-product-card>
+
+
+</div>
+<div class="btn">
+    <button (click)="buyProducts()" class="btn btn-outline-success">BUY</button>
+</div>

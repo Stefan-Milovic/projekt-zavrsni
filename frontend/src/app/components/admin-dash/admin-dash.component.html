@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center"> <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNi4yXnHMYTNDO2i-9PfbVFsuQDGm5wsaLQ&usqp=CAU"
+        alt="slika"></div>
+<div class="d-flex mt-3 mb-5 whole-container">
+
+    <div class="adminOptions">
+
+
+        <div [class.active]="active == 'users'" (click)="active = 'users'" class="usersDashDiv div1">
+            <div class="iconDiv">
+                <i class="bi bi-people"> </i>
+            </div>
+            <div class="detailsDiv">
+            </div>
+        </div>
+
+        <div [class.active]="active == 'products'" (click)="active = 'products'" class="usersDashDiv div2">
+            <div class="iconDiv">
+                <i class="bi bi-bag-plus"></i>
+            </div>
+            <div class="detailsDiv">
+            </div>
+        </div>
+
+        <!-- <div [class.active]="active == 'categories'" (click)="active = 'categories'" class="usersDashDiv 3 div3">
+            <div class="iconDiv">
+                <i class="bi bi-archive"></i>
+            </div>
+            <div class="detailsDiv">
+            </div>
+        </div>-->
+    </div>
+    <div class="adminPanel">
+        <app-admin-products *ngIf="active == 'products'"></app-admin-products>
+        <app-admin-users *ngIf="active == 'users'"></app-admin-users>
+    </div>
+
+
+
+</div>
